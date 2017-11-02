@@ -7,9 +7,10 @@
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
-      <secret-storage>memory</secret-storage>
       <user-name>root</user-name>
+      <introspection-schemas>*:kylin</introspection-schemas>
       <resolve-scope>kylin:</resolve-scope>
+      <unqualified-resolve-schemas>kylin:</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>

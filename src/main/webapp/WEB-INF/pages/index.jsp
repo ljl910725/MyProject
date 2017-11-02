@@ -17,24 +17,36 @@
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .col-center-block {
+            float: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
 <body>
+<div class="container col-center-block">
+    <h2>欢迎登录</h2>
+    <form role="form" action="/login" method="post" style="width: 200px">
 
-<form role="form" action="/login" method="post">
-    <div class="form-group">
-        <label for="username">用户名</label>
-        <input type="text" id="username" class="form-control" name="username" placeholder="请输入用户名"/>
-    </div>
-    <div class="form-group">
-        <label for="password">密码</label>
-        <input type="text" id="password" class="form-control" name="password" placeholder="请输入密码">
-    </div>
-    <div class="form-group">
-        <button type="submit" class="btn btn-default">登录</button>
-        <a href="/register" type="button" class="btn btn-link">注册</a>
-    </div>
-</form>
-    </div>
+        <div class="form-group">
+            <label for="username">用户名</label>
+            <input type="text" id="username" class="form-control" name="username" placeholder="请输入用户名"/>
+        </div>
+        <div class="form-group ">
+            <label for="password">密码</label>
+            <input type="password" id="password" class="form-control" name="password" placeholder="请输入密码">
+        </div>
+        <div class="form-group ">
+            <button type="submit" class="btn btn-default">登录</button>
+            <a href="/registerSkip" type="button" class="btn btn-link">注册</a>
+        </div>
+
+    </form>
+</div>
+</div>
 
 </form>
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->

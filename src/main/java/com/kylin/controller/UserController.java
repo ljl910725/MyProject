@@ -32,9 +32,9 @@ public class UserController {
         return "register";
     }
 
-    @RequestMapping(value = "/rigister", method = RequestMethod.POST)
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
     public String register(@ModelAttribute("user") UserEntity userEntity) {
         userRepository.saveAndFlush(userEntity);
-        return "index";
+        return "redirect:/";
     }
 }
