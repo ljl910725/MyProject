@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/../../out/test/main"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<levels>
+		<level name="lib" value="project"/>
+		<level name="Maven: redis.clients:jedis:2.3.1" value="project"/>
+		<level name="Maven: org.springframework.data:spring-data-redis:2.0.0.RELEASE" value="project"/>
+	</levels>
+</component>

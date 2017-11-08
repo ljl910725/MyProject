@@ -4,10 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.stereotype.Repository;
 
 /**
  * Created by Kylin on 2017/11/2.
  */
+@Repository
 public class OrderDao {
     @Autowired
     private RedisTemplate<String, Order> redisTemplate;

@@ -1,11 +1,14 @@
 package com.kylin.demo.redis;
 
+import org.springframework.stereotype.Component;
+
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by Kylin on 2017/11/2.
  */
+@Component
 public class Order implements Serializable {
     private static final long serialVersionUID = 1L;
 
